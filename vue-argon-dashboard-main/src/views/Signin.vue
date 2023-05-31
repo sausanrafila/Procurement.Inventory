@@ -56,7 +56,8 @@
             <div
               class="top-0 my-auto text-center col-6 d-lg-flex d-none h-100 pe-0 position-absolute end-0 justify-content-center flex-column"
             >
-              <div
+            
+          <!-- <div
                 class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden"
                 style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
           background-size: cover;"
@@ -68,7 +69,7 @@
                 <p
                   class="text-white position-relative"
                 >The more effortless the writing looks, the more effort the writer actually put into the process.</p>
-              </div>
+              </div> ILANGIN GAMBARRR -->
             </div>
           </div>
         </div>
