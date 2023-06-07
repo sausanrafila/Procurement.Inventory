@@ -1,64 +1,40 @@
 <template>
-  <div class="container ">
-    <div class="row">
-      <!-- <div class="col-12">
-        <navbar
-          isBlur="blur  "
-          
-          isBtn="bg-gradient-success"
-        />
-      </div> -->
-    </div>
-  </div>
   <main class="mt-0 main-content">
     <section>
       <div class="page-header min-vh-100">
         <div class="container">
           <div class="row">
-            <div class="mx-auto col-xl-4 col-lg-5 col-md-7 ">
+            <div class="mx-auto col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0">
               <div class="card card-plain">
                 <div class="pb-0 card-header text-start">
-                  <h4 class="font-weight-bolder">Sign In</h4>
-                  <p class="mb-0">Enter your email and password to sign in</p>
+                  <img src="imm.png" class="col-xl-12 mb-3">
+                  <h5 class="font-weight-bolder">Login</h5>
                 </div>
                 <div class="card-body">
                   <form role="form">
                     <div class="mb-3">
-                      <argon-input type="email" placeholder="Email" name="email" size="lg" />
+                      <p>Username</p>
+                      <argon-input type="text" placeholder="Username" name="text" size="md" />
                     </div>
                     <div class="mb-3">
-                      <argon-input type="password" placeholder="Password" name="password" size="lg" />
+                      <p>Password</p>
+                      <argon-input type="password" placeholder="Password" name="password" size="md" />
                     </div>
                     <argon-switch id="rememberMe">Remember me</argon-switch>
-                    <div class="text-center">
+
+                    <div class="text-end" >
                       <argon-button
                         class="mt-4"
-                        variant="gradient"
-                        color="success"
-                        fullWidth
-                        size="lg"
-                      >Sign in</argon-button>
+                        style="background-color: #246AFC;"
+                        size="md"
+                      >Login</argon-button>
                     </div>
                   </form>
                 </div>
-                <div class="px-1 pt-0 text-center card-footer px-lg-2">
-                  <p class="mx-auto mb-4 text-sm">
-                    Don't have an account?
-                    <a
-                      href="javascript:;"
-                      class="text-success text-gradient font-weight-bold"
-                    >Sign up</a>
-                  </p>
-                </div>
               </div>
             </div>
-            <div
-              class="top-0 my-auto text-center col-6 d-lg-flex d-none h-100 pe-0 position-absolute end-0 justify-content-center flex-column"
-            >
-              <div
-                class="position-relative bg-gradient-primary "
-              >
-              </div>
+            <div class="top-0 col-6 position-absolute end-0 ">
+                <img src="procu.png" class="img-fluid" style="position:absolute; " >
             </div>
           </div>
         </div>
@@ -68,7 +44,6 @@
 </template>
 
 <script>
-// import Navbar from "@/examples/PageLayout/Navbar.vue";
 import ArgonInput from "@/components/ArgonInput.vue";
 import ArgonSwitch from "@/components/ArgonSwitch.vue";
 import ArgonButton from "@/components/ArgonButton.vue";
@@ -77,7 +52,6 @@ const body = document.getElementsByTagName("body")[0];
 export default {
   name: "signin",
   components: {
-    // Navbar,
     ArgonInput,
     ArgonSwitch,
     ArgonButton,
