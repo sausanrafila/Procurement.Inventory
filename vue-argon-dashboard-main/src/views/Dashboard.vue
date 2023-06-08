@@ -3,13 +3,11 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-md-6 ">
             <card
               :title="stats.money.title"
               :value="stats.money.value"
               :percentage="stats.money.percentage"
-              :iconClass="stats.money.iconClass"
-              :iconBackground="stats.money.iconBackground"
               :detail="stats.money.detail"
               directionReverse
             ></card>
@@ -20,7 +18,6 @@
               :value="stats.users.value"
               :percentage="stats.users.percentage"
               :iconClass="stats.users.iconClass"
-              :iconBackground="stats.users.iconBackground"
               :detail="stats.users.detail"
               directionReverse
             ></card>
@@ -31,8 +28,6 @@
               :value="stats.clients.value"
               :percentage="stats.clients.percentage"
               :iconClass="stats.clients.iconClass"
-              :iconBackground="stats.clients.iconBackground"
-              :percentageColor="stats.clients.percentageColor"
               :detail="stats.clients.detail"
               directionReverse
             ></card>
@@ -43,7 +38,6 @@
               :value="stats.sales.value"
               :percentage="stats.sales.percentage"
               :iconClass="stats.sales.iconClass"
-              :iconBackground="stats.sales.iconBackground"
               :detail="stats.sales.detail"
               directionReverse
             ></card>
@@ -132,37 +126,25 @@ export default {
     return {
       stats: {
         money: {
-          title: "Today's Money",
-          value: "$53,000",
-          percentage: "+55%",
-          iconClass: "ni ni-money-coins",
-          detail: "since yesterday",
+          // update
+          title: "Request Total",
+          value: "125",
           iconBackground: "bg-gradient-primary",
         },
         users: {
-          title: "Today's Users",
-          value: "2,300",
-          percentage: "+3%",
-          iconClass: "ni ni-world",
+          title: "On Progress",
+          value: "423",
           iconBackground: "bg-gradient-danger",
-          detail: "since last week",
         },
         clients: {
-          title: "New Clients",
-          value: "+3,462",
-          percentage: "-2%",
-          iconClass: "ni ni-paper-diploma",
-          percentageColor: "text-danger",
+          title: "Approved",
+          value: "67",
           iconBackground: "bg-gradient-success",
-          detail: "since last quarter",
         },
         sales: {
-          title: "Sales",
-          value: "$103,430",
-          percentage: "+5%",
-          iconClass: "ni ni-cart",
+          title: "Rejected",
+          value: "16",
           iconBackground: "bg-gradient-warning",
-          detail: "than last month",
         },
       },
       sales: {
