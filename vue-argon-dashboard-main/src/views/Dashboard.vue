@@ -133,7 +133,7 @@ export default {
         },
         users: {
           title: "On Progress",
-          value: "42",
+          value: "423",
           iconBackground: "bg-gradient-danger",
         },
         clients: {
