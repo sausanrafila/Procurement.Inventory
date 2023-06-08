@@ -2,14 +2,14 @@
   <div
     v-show="this.$store.state.layout === 'default'"
     class="min-height-300 position-absolute w-100"
-    :class="`${this.$store.state.darkMode ? 'bg-transparent' : 'bg-success'}`"
+    :class="`${this.$store.state.darkMode ? 'bg-transparent' : 'bg-dark'}`"
   />
   <aside
-    class="my-3 overflow-auto border-0 sidenav navbar navbar-vertical navbar-expand-xs border-radius-xl"
+    class="overflow-auto border-0 sidenav navbar navbar-vertical navbar-expand-xs"
     :class="`${
       this.$store.state.isRTL
         ? 'me-3 rotate-caret fixed-end'
-        : 'fixed-start ms-3'
+        : 'fixed-start '
     } 
     ${
       this.$store.state.layout === 'landing'
@@ -26,26 +26,23 @@
       ></i>
       <router-link class="m-0 navbar-brand" to="/">
         <img
-          :src="
-            this.$store.state.darkMode ||
-            this.$store.state.sidebarType === 'bg-default'
-              ? logoWhite
-              : logo
-          "
-          class="navbar-brand-img h-100"
+          :src="logo  "
+          class="navbar-brand-img "
           alt="main_logo"
+          style="max-height: fit-content;"
         />
-        <span class="ms-2 font-weight-bold me-2">Argon Dashboard 2</span>
+        <!-- <span class="ms-2 font-weight-bold me-2"> Dashboard 2</span> -->
       </router-link>
     </div>
-    <hr class="mt-0 horizontal dark" />
+    <hr class="mt-0 horizontal white" />
     <sidenav-list :cardBg="custom_class" />
   </aside>
 </template>
 <script>
 import SidenavList from "./SidenavList.vue";
-import logo from "@/assets/img/logo-ct-dark.png";
-import logoWhite from "@/assets/img/logo-ct.png";
+import logo from "@/assets/img/logos/logonavside.png"
+// import logo from "@/assets/img/logo-ct-dark.png";
+// import logoWhite from "@/assets/img/logo-ct.png";
 
 export default {
   name: "index",
@@ -55,7 +52,7 @@ export default {
   data() {
     return {
       logo,
-      logoWhite
+      // logoWhite
     };
   },
   props: ["custom_class", "layout"]
