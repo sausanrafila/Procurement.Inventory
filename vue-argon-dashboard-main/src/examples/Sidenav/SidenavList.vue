@@ -5,6 +5,7 @@
   >
     <ul class="navbar-nav">
       <li class="nav-item">
+        <p class="px-4 h6" >MENU</p>
         <sidenav-item
           url="/dashboard-default"
           :class="getRoute() === 'dashboard-default' ? 'active' : ''"

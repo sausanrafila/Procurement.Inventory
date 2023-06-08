@@ -1,16 +1,16 @@
 <template>
   <main class="mt-0 main-content">
     <section>
-      <div class="page-header min-vh-100">
+      <div class="page-header min-vh-100" style="background-color: #F5F8FA;">
         <div class="container">
           <div class="row">
             <div class="mx-auto col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0">
               <div class="card card-plain">
-                <div class="pb-0 card-header text-start">
+                <div class="pb-0 card-header text-start" style="background-color: #F5F8FA;">
                   <img src="imm.png" class="col-xl-12 mb-3">
                   <h5 class="font-weight-bolder">Login</h5>
                 </div>
-                <div class="card-body">
+                <div class="card-body" >
                   <form role="form">
                     <div class="mb-3">
                       <p>Username</p>
@@ -21,7 +21,6 @@
                       <argon-input type="password" placeholder="Password" name="password" size="md" />
                     </div>
                     <argon-switch id="rememberMe">Remember me</argon-switch>
-
                     <div class="text-end" >
                       <argon-button
                         class="mt-4"
