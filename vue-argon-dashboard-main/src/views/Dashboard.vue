@@ -59,39 +59,58 @@
             <div class="card">
               <div class="p-3 pb-0 card-header">
                 <div class="d-flex justify-content-between">
-                  <h6 class="mb-2">Sales by Country</h6>
+                  <h6 class="mb-2">Latest Request</h6>
                 </div>
               </div>
               <div class="table-responsive">
                 <table class="table align-items-center">
                   <tbody>
+
+                    <div class="text-center">
+                    <p class="mb-0 text-xs font-weight-bold">Member Name</p>
+                    </div>
+                    
+
                     <tr v-for="(sale, index) in sales" :key="index">
+                      
                       <td class="w-30">
+                  
                         <div class="px-2 py-1 d-flex align-items-center">
-                          <div>
-                            <img :src="sale.flag" alt="Country flag" />
-                          </div>
+                          
                           <div class="ms-4">
-                            <p class="mb-0 text-xs font-weight-bold">Country:</p>
                             <h6 class="mb-0 text-sm">{{ sale.country }}</h6>
                           </div>
                         </div>
                       </td>
+                      
                       <td>
+                        
                         <div class="text-center">
-                          <p class="mb-0 text-xs font-weight-bold">Sales:</p>
+                          <p class="mb-0 text-xs font-weight-bold">Item Name</p>
                           <h6 class="mb-0 text-sm">{{ sale.sales }}</h6>
                         </div>
                       </td>
                       <td>
                         <div class="text-center">
-                          <p class="mb-0 text-xs font-weight-bold">Value:</p>
+                          <p class="mb-0 text-xs font-weight-bold">Category</p>
                           <h6 class="mb-0 text-sm">{{ sale.value }}</h6>
                         </div>
                       </td>
                       <td class="text-sm align-middle">
                         <div class="text-center col">
-                          <p class="mb-0 text-xs font-weight-bold">Bounce:</p>
+                          <p class="mb-0 text-xs font-weight-bold">Total</p>
+                          <h6 class="mb-0 text-sm">{{ sale.bounce }}</h6>
+                        </div>
+                      </td>
+                      <td class="text-sm align-middle">
+                        <div class="text-center col">
+                          <p class="mb-0 text-xs font-weight-bold">Due Date</p>
+                          <h6 class="mb-0 text-sm">{{ sale.bounce }}</h6>
+                        </div>
+                      </td>
+                      <td class="text-sm align-middle">
+                        <div class="text-center col">
+                          <p class="mb-0 text-xs font-weight-bold">Status</p>
                           <h6 class="mb-0 text-sm">{{ sale.bounce }}</h6>
                         </div>
                       </td>
@@ -133,7 +152,7 @@ export default {
         },
         users: {
           title: "On Progress",
-          value: "423",
+          value: "42",
           iconBackground: "bg-gradient-danger",
         },
         clients: {
@@ -149,31 +168,31 @@ export default {
       },
       sales: {
         us: {
-          country: "United States",
-          sales: 2500,
-          value: "$230,900",
-          bounce: "29.9%",
+          country: "INI KELOMPOK 4",
+          sales: "Pengajuan Mesin",
+          value: "Barang",
+          bounce: "Rp 1.000.000",
           flag: US,
         },
         germany: {
-          country: "Germany",
-          sales: "3.900",
-          value: "$440,000",
-          bounce: "40.22%",
+          country: "INI KELOMPOK 4",
+          sales: "Pengajuan Mesin",
+          value: "Akomodasi",
+          bounce: "Rp 1.000.000",
           flag: DE,
         },
         britain: {
-          country: "Great Britain",
-          sales: "1.400",
-          value: "$190,700",
-          bounce: "23.44%",
+          country: "INI KELOMPOK 4",
+          sales: "Pengajuan Mesin",
+          value: "Lainnya",
+          bounce: "Rp 1.000.000",
           flag: GB,
         },
         brasil: {
-          country: "Brasil",
-          sales: "562",
-          value: "$143,960",
-          bounce: "32.14%",
+          country: "INI KELOMPOK 4",
+          sales: "Pengajuan Mesin",
+          value: "Barang",
+          bounce: "Rp 1.000.000",
           flag: BR,
         },
       },
